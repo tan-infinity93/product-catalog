@@ -23,67 +23,117 @@
 	<!-- end: Facebook Open Graph -->
 
     <!-- start: CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> -->
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/slider1.css" rel="stylesheet">
 	<link href="css/slider2.css" rel="stylesheet">
 	<link href="css/slider3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+
+	<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic"> -->
 	<!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style type="text/css">
+    	.navbar {
+    	    -webkit-box-shadow: 0 8px 6px -6px #999;
+    	    -moz-box-shadow: 0 8px 6px -6px #999;
+    	    box-shadow: 0 8px 6px -6px #999;
+    	    z-index: 10;
+    	    background-color: #ffffff !important;
+    	}
+    	.custom_row {
+    	  display: flex;
+    	  flex-wrap: wrap;
+    	  padding: 0 4px;
+    	}
+
+    	/* Create four equal columns that sits next to each other */
+    	.custom_column {
+    	  flex: 25%;
+    	  max-width: 25%;
+    	  padding: 0 4px;
+    	}
+
+    	.custom_column img {
+    	  margin-top: 8px;
+    	  vertical-align: middle;
+    	  width: 100%;
+    	}
+
+    	/* Responsive layout - makes a two column-layout instead of four columns */
+    	@media screen and (max-width: 800px) {
+    	  .custom_column {
+    	    flex: 50%;
+    	    max-width: 50%;
+    	  }
+    	}
+
+    	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    	@media screen and (max-width: 600px) {
+    	  .custom_column {
+    	    flex: 100%;
+    	    max-width: 100%;
+    	  }
+    	}
+    </style>
 
 </head>
 <body>
+
+	<nav class="navbar navbar-expand-md fixed-top bg-light navbar-light">
+	  <!-- Brand -->
+	  <a class="navbar-brand" href="#">
+	  	<img src="img/logo.jpeg" alt="Logo" style="width:80px; height:50px;">
+	  </a>
+
+	  <!-- Toggler/collapsibe Button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <!-- Navbar links -->
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#home">Home</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	          Products
+	        </a>
+	        <div class="dropdown-menu">
+	          <a class="dropdown-item" href="#">FMCG</a>
+	          <a class="dropdown-item" href="#">FMCD</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
 	
-	<!--start: Header -->
-	<header>
-		
-		<!--start: Container -->
-		<div class="container">
-						
-			<!--start: Row -->
-			<div class="row-fluid">
-					
-				<!--start: Navigation -->
-				<div class="navigation"> 
-				
-					<div class="navbar navbar-fixed-top">
-			    		<div class="navbar-inner">
-			          		<a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
-			            		menu
-			          		</a>
-			          		<div class="nav-collapse collapse">
-			            		<ul class="nav">
-									<li><a href="#" class="home">Home</a></li>
-			              			<li><a href="#" class="services">Services</a></li>
-									<li><a href="#" class="portfolio">Products</a></li>
-									<li><a href="#" class="about">About</a></li>
-									<li><a href="#" class="contact">Contact</a></li>
-			            		</ul>
-			          		</div>
-			        	</div>
-			      	</div>
-				
-				
-				</div>	
-				<!--end: Navigation -->	
-					
-			</div>
-			<!--end: Row -->
-			
-		</div>
-		<!--end: Container-->			
-			
-	</header>
+	<br><br><br>
+	<!-- <div class="container-fluid"> -->
+	
+	<!-- </div> -->
+
 	<!--end: Header-->
 	<!-- start: 1st Page - Home -->
 	<div id="home">
@@ -155,113 +205,6 @@
 	</div>
 	<!-- end: 1st Page - Home -->
 	
-	<!-- start: 2nd Page - Services -->
-	<div id="services" class="color black">
-		
-		<!--start: Container -->
-		<div class="container">
-
-			<!--start: Wrapper -->
-			<div class="wrapper span12">
-				
-							<!-- start: Page Title -->
-			<div id="page-title">
-
-				<div id="page-title-inner">
-
-					<h2><span>Services</span></h2>
-
-				</div>	
-
-			</div>
-			<!-- end: Page Title -->
-			
-			<!-- start: Row -->
-      		<div class="row-fluid">
-	
-        		<div class="span12">
-	
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>	
-          			
-        		</div>
-			
-			</div>
-			<!-- end: Row -->
-			
-			<!-- start: Row -->
-      		<div class="row-fluid">
-	
-        		<div class="span6">
-	
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>	
-          			
-        		</div>
-
-				<div class="span6">
-	
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>	
-          			
-        		</div>
-			
-			</div>
-			<!-- end: Row -->	
-	
-      		<!-- start: Row -->
-      		<div class="row-fluid">
-	
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="fa-icon-beaker"></i>
-						<h3>Mobile</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clearfix"></div>
-					</div>
-        		</div>
-
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="fa-icon-thumbs-up"></i>
-						<h3>Web</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clearfix"></div>
-					</div>
-        		</div>
-
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="fa-icon-heart-empty"></i>
-						<h3>Responsive</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clearfix"></div>
-					</div>
-        		</div>
-
-			</div>
-			<!-- end: Row -->
-			
-			<div class="clearfix"></div>
-			<hr class="clean">					
-			</div>
-			<!-- end: Wrapper -->
-		
-		</div>
-		<!--end: Container -->
-		
-	</div>
-	<!-- end: 2nd Page - Services -->
-	
 	<!-- start: 4th Page - Portfolio -->
 	<div id="portfolio" class="color white">
 		
@@ -319,70 +262,44 @@
 
 			<!-- start: Portfolio -->
 			<div id="portfolio-wrapper" class="row-fluid">
-								
-				<div class="span4 portfolio-item website html5 css3 responsive">
-					
-					<div class="picture"><a href="/products.html" title="Smart Responsive Template"><img src="img/portfolio/smart.png" alt=""/><div class="image-overlay-link"></div></a>
-					
-						<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 1
-							</a></h5>
-						</div>
-					</div>	
+				<div class="custom_row">
+				  <div class="custom_column">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				  </div>
+				  <div class="custom_column">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				  </div>
+				  <div class="custom_column">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				  </div>
+				  <div class="custom_column">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				    <img src="img/slider/slider1.jpg">
+				  </div>
 				</div>
-
-				<div class="span4 portfolio-item website html5 css3 responsive">
-					<div class="picture">
-						<a href="/products.html" title="Title"><img src="img/portfolio/great.png" alt=""/><div class="image-overlay-link"></div></a>
-							<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 2
-							</a></h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="span4 portfolio-item website html5 css3 responsive">
-					<div class="picture"><a href="/products.html" title="Title"><img src="img/portfolio/magnus.png" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 3
-							</a></h5>
-						</div>	
-					</div>
-				</div>
-
-				<div class="span4 portfolio-item admin dashboard html5 css3 responsive">
-					<div class="picture"><a href="/products.html" title="Title"><img src="img/portfolio/optimus.png" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 4
-							</a></h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="span4 portfolio-item admin dashboard html5 css3 responsive">
-					<div class="picture"><a href="/products.html" title="Title"><img src="img/portfolio/perfectum.png" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 5
-							</a></h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="span4 portfolio-item website html5 css3 responsive">
-					<div class="picture"><a href="/products.html"><img src="img/portfolio/redbox.png" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="/products.html">
-								Product 6
-							</a></h5>
-						</div>
-					</div>
-				</div>
-
 			</div>
 			<!-- end: Portfolio -->
 			</div>
@@ -424,7 +341,7 @@
 					<div id="story">
 						<h3>Our Story</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+							
 						</p>
 					</div>	
 					<!-- end: About Us -->
@@ -466,10 +383,10 @@
 			<!-- end: Page Title -->
 			
 			<!-- start: Row -->
-			<div class="row-fluid">		
+			<div class="row">		
 				
-				<div class="span2"></div>
-				<div class="span8">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
 					
 					<!-- start: Contact Info -->
 					<b>creativeLabs</b> •
@@ -482,7 +399,7 @@
 					<!-- end: Contact Info -->
 				
 				</div>
-				<div class="span2"></div>
+				<div class="col-sm-2"></div>
 			
 			</div>
 			<!-- end: Row -->
@@ -490,29 +407,28 @@
 			<hr class="clean">
 			
 			<!-- start: Row -->
-			<div class="row-fluid">		
+			<div class="row">		
 				
-				<div class="span4"></div>
+				<div class="col-sm-4"></div>
 				<!-- start: Map -->
-				<div class="span4">
+				<div class="col-sm-4">
 					<!-- start: Contact Form -->
 					<div id="contact-form">
 
 						<form method="post" action="">
-							
-							<fieldset>
-								
-								<input tabindex="4" id="name" name="name" type="text" value="" class="span12" placeholder="name: ..." >
-								<input tabindex="2" id="email" name="email" type="text" value="" class="span12" placeholder="email: ...">
-								<input tabindex="3" id="www" name="www" type="text" value="" class="span12" placeholder="www: ...">
-								<textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="7" placeholder="message: ..."></textarea>
-
-								<div class="actions">
-									<button tabindex="" type="submit" class="btn btn-success btn-large">Send message</button>
-								</div>
-								
-							</fieldset>
-
+							<div class="form-group">
+							  <input type="text" class="form-control" id="usr" placeholder="name...">
+							</div>
+							<div class="form-group">
+							  <input type="text" class="form-control" id="email" placeholder="email...">
+							</div>
+							<div class="form-group">
+							  <input type="text" class="form-control" id="web" placeholder="www...">
+							</div>
+							<div class="form-group">
+							  <textarea class="form-control" rows="5" id="message" placeholder="message..."></textarea>
+							</div>
+							<button type="button" class="btn btn-success">Send Message</button>
 						</form>
 
 					</div>
@@ -521,7 +437,7 @@
 
 				</div>
 				<!-- end: Map -->
-				<div class="span4"></div>
+				<div class="col-sm-4"></div>
 			
 			</div>
 			<!-- end: Row -->
